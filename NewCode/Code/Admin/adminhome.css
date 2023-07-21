@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: dark-blue;
+}
+
+center {
+  margin-top: 20px;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: blue;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+a.button:hover {
+  background-color: #45a049;
+  color: dark-blue;
+}

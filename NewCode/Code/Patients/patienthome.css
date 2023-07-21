@@ -1,0 +1,49 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link Styles */
+a {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: dark-blue;
+}
+
+/* Heading Styles */
+h2 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Remove Center Alignment */
+center {
+  display: block;
+  text-align: left;
+}

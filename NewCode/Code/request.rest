@@ -1,0 +1,112 @@
+GET http://localhost:3000/posts
+Authorization: Bearer 
+
+
+
+###
+# Register User
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+  "Username": "Steph",
+  "Password": "wandu",
+  "ProductType":"Regular"
+}
+
+###
+#Login user
+POST http://localhost:3000/api/login 
+content-type : application/json
+
+{
+      "Username": "Tiffany",
+      "Password": "garo",
+      "ProductType":"Regular"
+
+
+
+}
+
+
+#secure endpoints
+###
+GET http://localhost:3000/api/doc
+Authorization: Bearer    
+
+###
+GET http://localhost:3000/api/doc/id/2
+Authorization: Bearer  
+###
+GET http://localhost:3000/api/doc/gender/:gender
+Authorization: Bearer 
+
+###
+GET http://localhost:3000/api/pcm
+Authorization: Bearer  
+
+###
+GET http://localhost:3000/api/pcm/id/:id
+Authorization: Bearer  
+
+###
+GET http://localhost:3000/api/pcm/gender/:gender
+Authorization: Bearer 
+
+###
+GET http://localhost:3000/api/admin
+Authorization: Bearer 
+
+###
+GET  http://localhost:3000/api/admin/id/:id
+Authorization: Bearer 
+
+###
+GET  http://localhost:3000/api/admin/gender/:gender
+Authorization: Bearer  
+###
+GET http://localhost:3000/api/patients
+Authorization: Bearer  
+###
+GET http://localhost:3000/api/patients/id/:id
+Authorization: Bearer 
+###
+GET http://localhost:3000/api/patients/gender/:gender
+Authorization: Bearer 
+###
+GET http://localhost:3000/api/pharmacists
+Authorization: Bearer  
+###
+GET  http://localhost:3000/api/pharmacists/id/:id
+Authorization: Bearer 
+###
+GET  http://localhost:3000/api/pharmacists/gender/:gender
+Authorization: Bearer 
+###
+GET http://localhost:3000/api/patient/dispensed/:category
+Authorization: Bearer 
+###
+GET http://localhost:3000/api/patient/dispensed/date/2023-11-01
+Authorization: Bearer  
+
+###
+GET http://localhost:3000/api/users/logintime
+Authorization: Bearer  
+
+
+
+
+#Insecure endpoints
+###
+GET http://localhost:3000/api/drugs
+####
+GET http://localhost:3000/api/drug/3
+
+###
+GET http://localhost:3000/api/drugs/category/painrelievers
+###
+GET http://localhost:3000/api/drugs/:pcid
+###
+
+
+
